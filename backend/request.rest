@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Mujilatul",
+    "nim": "D121211062",
+    "semester": "5"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Muji",
+    "nim": "D121211060",
+    "semester": "3"
+}
+
+###
+DELETE http://localhost:5000/users/2
